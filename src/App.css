@@ -1,38 +1,188 @@
-.App {
-  text-align: center;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#root {
+  background-color: rgb(240, 240, 240);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.link-name {
+  text-decoration: none;
   color: white;
+  font-size: 1.3rem;
 }
 
-.App-link {
-  color: #61dafb;
+.link-name:hover {
+  cursor: pointer;
+  color: rgb(227, 227, 227);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Extra Background Colors */
+.grass {
+  background-color: rgb(38, 235, 90);
+}
+
+.fire {
+  background-color: rgb(235, 71, 38);
+}
+
+.water {
+  background-color: rgb(38, 186, 235);
+}
+
+.electric {
+  background-color: rgb(235, 209, 38);
+}
+
+.ice {
+  background-color: rgb(38, 219, 235);
+}
+
+.fighting {
+  background-color: rgb(235, 104, 38);
+}
+
+.poison {
+  background-color: rgb(176, 38, 235);
+}
+.ground {
+  background-color: rgb(181, 131, 92);
+}
+
+.flying {
+  background-color: rgb(161, 215, 230);
+}
+
+.psychic {
+  background-color: rgb(219, 77, 207);
+}
+
+.ghost {
+  background-color: rgb(131, 24, 133);
+}
+
+.bug {
+  background-color: rgb(113, 209, 10);
+}
+
+.rock {
+  background-color: rgb(166, 87, 8);
+}
+
+.dragon {
+  background-color: rgb(50, 24, 217);
+}
+
+.normal {
+  background-color: rgb(168, 162, 157);
+}
+
+.fairy {
+  background-color: rgb(255, 148, 191);
+}
+body {
+  background: hsla(210, 20%, 90%, 1);
+  padding: 2em 0;
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h5 {
+  margin: 0;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.header h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3em;
+  margin-bottom: 0.2em;
+  line-height: 1.2;
+  color: #222
+}
+
+.header h3 {
+  font-weight: 400;
+  color: #555;
+  width: 30em;
+}
+
+.cardes {
+  display: flex;
+  align-items: flex-start;
+    justify-content: center;
+}
+
+.carde {
+  background: #fff;
+  width: 24em;
+  border-radius: 0.6em;
+  margin: 1em;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 13px 27px -5px hsla(240, 30.1%, 28%, 0.25), 0 8px 16px -8px hsla(0, 0%, 0%, 0.3), 0 -6px 16px -6px hsla(0, 0%, 0%, 0.03);
+  transition: all ease 200ms;
+}
+
+.carde:hover {
+  transform: scale(1.03);
+  box-shadow: 0 13px 40px -5px hsla(240, 30.1%, 28%, 0.12), 0 8px 32px -8px hsla(0, 0%, 0%, 0.14), 0 -6px 32px -6px hsla(0, 0%, 0%, 0.02);
+}
+
+.carde img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.carde h2 {
+  color: #222;
+  margin-top: -0.2em;
+  line-height: 1.4;
+  font-size: 1.3em;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+  transition: all ease-in 100ms;
+}
+
+.carde p {
+  color: #777;
+}
+
+.carde h5 {
+  color: #bbb;
+  font-weight: 700;
+  font-size: 0.7em;
+  letter-spacing: 0.04em;
+  margin: 1.4em 0 0 0;
+  text-transform: uppercase;
+}
+
+.carde-body {
+  padding: 1.2em;
+}
+
+.logo{
+  height:100px;
+  align-content: center;
+}
+.navL{
+  margin: auto;
+  text-align:center;
+  
+}
+.nav{
+  background: linear-gradient(to right, #33ccff 0%, #ffffff 100%);
+}
+.head-text{
+  text-align: center;
 }
